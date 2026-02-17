@@ -8,52 +8,56 @@ Relational SQL database model for managing real-world grain mill operations.
 
 This project implements a fully normalized relational database schema for a grain mill management system.
 
-The model represents operational workflows including grain intake, processing, storage, product distribution and invoice handling.  
-It strictly separates master data from transactional data and enforces structural consistency through relational constraints.
+The database models operational workflows including:
 
-The schema is designed to support scalable operational processes while maintaining data integrity and traceability.
+- Grain intake and farmer deliveries  
+- Storage management  
+- Product processing  
+- Customer order handling  
+- Invoice generation  
 
-### Core Business Entities
-
-- Farmers  
-- Grain Deliveries  
-- Storage Units  
-- Products  
-- Customers  
-- Orders  
-- Invoices  
+The schema enforces structural integrity through primary and foreign key constraints and separates master data from transactional data to ensure consistency and scalability.
 
 ---
 
-## Database Design Principles
+## Data Model Characteristics
 
-The database design follows established relational modeling standards:
+The design follows established relational database principles:
 
 - Normalization up to Third Normal Form (3NF)
-- Primary key and foreign key enforcement
+- Clear separation of master data and transactional data
 - 1:n relationship modeling
-- Referential integrity constraints
-- Separation of master and transactional data
-- Consistent naming conventions and domain structuring
+- Referential integrity via foreign keys
+- Structured attribute naming conventions
+- Constraint-based validation
+
+The model supports traceability of grain deliveries through processing to final product invoicing.
 
 ---
 
-## Technical Scope
+## Technical Implementation
 
-- SQL-based schema definition
+- SQL schema definition
+- Relational table design
+- Primary and foreign key constraints
 - Structured entity-relationship modeling
-- Constraint-driven data validation
-- Logical data modeling for operational business systems
+- Analytical example queries
 
 ---
 
 ## Repository Structure
-├── queries.sql      # SQL schema and import queries
-├── er-diagram.png   # Entity-Relationship diagram
-├── queries.pdf      # Sample analytical queries with results
+
+**queries.sql**  
+Complete SQL schema definition and relevant database queries.
+
+**er-diagram.png**  
+Entity-Relationship diagram representing the logical data model.
+
+**queries.pdf**  
+Sample analytical queries including results and evaluation.
 
 ---
 
 ## Academic Context
 
-Developed as part of a university assignment in database systems, focusing on relational modeling and SQL schema implementation.
+Developed as part of a university assignment in database systems with a focus on relational modeling, schema normalization and SQL-based implementation.

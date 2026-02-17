@@ -1,21 +1,23 @@
 # muehle-datenbank-modell
 
-Relational SQL database model for managing real-world mill operations.
+Relational SQL database model for managing real-world grain mill operations.
 
 ---
 
 ## Overview
 
-This project implements a fully normalized relational database schema for a grain mill.
+This project implements a fully normalized relational database schema for a grain mill management system.
 
-The model represents operational workflows such as grain intake, processing, storage, product distribution and billing.  
-It separates master data from transactional data and enforces structural integrity through relational constraints.
+The model represents operational workflows including grain intake, processing, storage, product distribution and invoice handling.  
+It strictly separates master data from transactional data and enforces structural consistency through relational constraints.
 
-Core business entities include:
+The schema is designed to support scalable operational processes while maintaining data integrity and traceability.
+
+### Core Business Entities
 
 - Farmers  
-- Grain deliveries  
-- Storage units  
+- Grain Deliveries  
+- Storage Units  
 - Products  
 - Customers  
 - Orders  
@@ -25,23 +27,30 @@ Core business entities include:
 
 ## Database Design Principles
 
-The schema applies standard relational database modeling concepts:
+The database design follows established relational modeling standards:
 
-- Normalization (up to 3NF)
-- Primary and foreign key constraints
-- 1:n relationships
-- Referential integrity
-- Clear separation of master and transaction data
-- Consistent attribute naming and domain structuring
+- Normalization up to Third Normal Form (3NF)
+- Primary key and foreign key enforcement
+- 1:n relationship modeling
+- Referential integrity constraints
+- Separation of master and transactional data
+- Consistent naming conventions and domain structuring
 
 ---
 
 ## Technical Scope
 
 - SQL-based schema definition
-- Structured entity-relationship design
-- Constraint-based data validation
-- Logical data modeling for operational systems
+- Structured entity-relationship modeling
+- Constraint-driven data validation
+- Logical data modeling for operational business systems
+
+---
+
+## Repository Structure
+├── queries.sql      # SQL schema and import queries
+├── er-diagram.png   # Entity-Relationship diagram
+├── queries.pdf      # Sample analytical queries with results
 
 ---
 
